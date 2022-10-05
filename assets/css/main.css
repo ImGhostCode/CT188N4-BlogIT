@@ -8,3 +8,86 @@ body {
     display: grid;
     font-family: Verdana, Geneva, sans-serif;
 }
+
+/* Header */
+
+#header {
+    width: 100%;
+    font-size: 11px;
+    background-color: #385c7b;
+}
+
+
+.header-top {
+    display: flex;
+    max-width: 56%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-top__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+}
+
+.header__nav-wraper {
+    background-color: #000;
+}
+
+.header__nav {
+    max-width: 56%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    list-style: none;
+}
+
+.nav__item {
+    font-size: 14px;
+    padding: 0 31px 0 14px;
+    font-weight: 600;
+}
+
+.nav__list li:first-of-type {
+    margin-left: 20px;
+}
+
+.nav__item-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 67px;
+}
+
+.nav__item:hover {
+    background-color: #e24a32;
+}
+
+
+
+/* .header-brand {
+    display: inline;
+} */
+
+.nav__btn-search {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 16px;
+}
+
+.nav__btn-search:hover {
+    cursor: pointer;
+}
