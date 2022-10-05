@@ -91,3 +91,169 @@ body {
 .nav__btn-search:hover {
     cursor: pointer;
 }
+
+/* Main */
+#main {
+    height: 1500px;
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+}
+
+.footer-top-wrapper {
+    background-color: #202228;
+}
+
+.footer-top,
+.footer-mid {
+    margin-left: auto;
+    color: #fff;
+    margin-right: auto;
+    max-width: 56%;
+    display: flex;
+    padding: 27px 0;
+}
+
+.footer-top p {
+    width: 50%;
+}
+
+.footer-top__form {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.footer-top__input {
+    padding: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    width: calc(100% - 144px);
+    border-radius: 4px;
+    outline: none;
+}
+
+.footer-top__btn {
+    height: 44px;
+    line-height: 44px;
+    width: 130px;
+    background-color: #de3535;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: 600;
+}
+
+.footer-top__btn:hover {
+    background-color: red;
+}
+
+.footer-mid-wrapper {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-mid {}
+
+.footer-mid__img {
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-mid__img img {
+    width: 231px;
+    height: 75px;
+}
+
+.footer-mid-about {
+    width: calc(100% - 25% - 33.3333334%);
+    padding: 0 24px;
+    font-size: 14px;
+}
+
+.footer-mid-about h4,
+.footer-mid-follow h4 {
+    margin-bottom: 26px;
+    font-size: 18px;
+}
+
+.footer-mid-about p:last-child {
+    padding-top: 21px;
+}
+
+.footer-mid-about a {
+    color: #de3535;
+}
+
+.footer-mid-follow {
+    width: 33.3333333%;
+}
+
+.footer-mid-follow {
+    padding: 0 24px;
+
+}
+
+.footer-mid-follow a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    background-color: #23252e;
+    border-radius: 50%;
+}
+
+.footer-mid-follow a:hover {
+    color: #4db2ec;
+}
+
+.footer-bottom {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    display: block;
+}
+
+.footer-bottom p {
+    padding: 32px 0;
+    font-size: 14px;
+}
+
+.footer__btn-top {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    height: 40px;
+    width: 40px;
+    background-color: #e24a32;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    /* animation: showBtnTop ease-in-out 2s; */
+}
+
+@keyframes showBtnTop {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 2px;
+    }
+}
+
+.footer__btn-top a {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
