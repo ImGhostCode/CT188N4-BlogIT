@@ -31,21 +31,41 @@
             </div>
             <nav class="header__nav">
                 <ul class="nav__list">
-                    <a href="/"><img src="./assets/images/logo.png" alt="logo" width="195px" height="67px"
+                    <a href="#"><img src="./assets/images/logo.png" alt="logo" width="195px" height="67px"
                             class="nav__img"></a>
                     <li class="nav__item"><a class="nav__item-link" href="#">HOME</a>
                     </li>
-                    <li class="nav__item"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="#">Al Machine Learning</a></li>
+                            <li class="dropdown-item"><a href="#">Frontend</a></li>
+                            <li class="dropdown-item"><a href="#">Backend</a></li>
+                            <li class="dropdown-item"><a href="#">Fullstack</a></li>
+                        </ul>
                     </li>
-                    <li class="nav__item"><a class="nav__item-link" href="#">KỸ NĂNG LÀM VIỆC <span><i
-                                    class="fa-solid fa-chevron-down"></i></span></a></li>
-                    <li class="nav__item"><a class="nav__item-link" href="#">TÀI KHOẢN <span><i
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">KỸ NĂNG LÀM VIỆC <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="#">Kinh nghiệm phỏng vấn</a></li>
+                            <li class="dropdown-item"><a href="#">Chuẩn hóa CV IT</a></li>
+                            <li class="dropdown-item"><a href="#">Đàm phán lương thưởng</a></li>
+                            <li class="dropdown-item"><a href="#">Cẩm nang tuyển dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">TÀI KHOẢN <span><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="#">Đăng nhập</a></li>
+                            <li class="dropdown-item"><a href="#">Đăng ký</a></li>
+                        </ul>
                     </li>
                 </ul>
 
-                <button class="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
+                            href="">Search</a></div>
+                </button>
             </nav>
         </div>
     </header>
