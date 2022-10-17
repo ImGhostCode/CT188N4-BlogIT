@@ -1,0 +1,89 @@
+/* * {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* main {
+    background-color: #fff;
+    display: flex;
+    width: 1260px;
+    padding: 10px;
+
+} */
+
+#main {
+    background-color: #fafafa;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.main-wrapper {
+    display: flex;
+    max-width: 56%;
+    /* height: 600px; */
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(242, 242, 242, 0.5);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 7px;
+}
+
+.main-left,
+.main-right {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.main-left h2,
+.main-right h2,
+.main-left h4 {
+    margin-bottom: 10px;
+}
+
+/* .main-left p:first-of-type {
+    margin-bottom: 10px;
+} */
+
+.main-left p {
+    margin-bottom: 5px;
+}
+
+.main-left a {
+    text-decoration: none;
+    color: #e24b30;
+}
+
+.main-right input[type="text"] {
+    margin-bottom: 1rem;
+}
+
+.Sm {
+    color: #fff;
+    background-color: #de3535;
+    outline: auto;
+}
+
+/* a :hover {
+    background-color: hotpink;
+} */
+
+.main__frame {
+    height: 350px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}

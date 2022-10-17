@@ -1,0 +1,86 @@
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* box-sizing: border-box; */
+    text-decoration: none;
+}
+
+fieldset {
+    /* width: 100%; */
+    width: 530px;
+    background-color: #fff;
+    /* border: 3px solid lightgray; */
+    border: 1px solid hsla(0, 0%, 95%, .5);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
+    margin: 64px auto;
+
+}
+
+legend {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    /* width: 530px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* display: flex; */
+}
+
+#main {
+    /* display: flex; */
+    background-color: #fafafa;
+    height: auto;
+    width: 100%;
+}
+
+form {
+    padding: 35px;
+}
+
+.tt {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.tt1 {}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #f2f2f2;
+}
+
+.Sm {
+    color: #fff;
+    background-color: #de3535;
+    outline: auto;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.p1 {
+    font-size: 11px;
+}
+
+.dangnhap {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.dangnhap a {
+
+    color: #de3535;
+}
+
+.dangnhap a:hover {
+    text-decoration: underline;
+}
