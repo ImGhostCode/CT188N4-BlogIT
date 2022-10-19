@@ -4,7 +4,7 @@
     text-decoration: none;
 }
 
-fieldset {
+.main__fieldset {
     /* width: 100%; */
     width: 530px;
     background-color: #fff;
@@ -15,11 +15,11 @@ fieldset {
 
 }
 
-legend {
+.fieldset__legend {
     text-align: center;
 }
 
-h1 {
+.fieldset__heading {
     text-align: center;
 }
 
@@ -37,20 +37,17 @@ body {
     width: 100%;
 }
 
-form {
+.fieldset__form {
     padding: 35px;
 }
 
-.tt {
+.form-wrapper {
     display: flex;
     justify-content: space-between;
-
-
 }
 
-.tt1 {}
 
-input {
+.form__input {
     width: 100%;
     padding: 10px;
     margin-top: 7px;
@@ -58,7 +55,7 @@ input {
     border: 1px solid #f2f2f2;
 }
 
-.Sm {
+.form__input--submit {
     color: #fff;
     background-color: #de3535;
     outline: auto;
@@ -67,20 +64,19 @@ input {
     font-size: 15px;
 }
 
-.p1 {
+.form__p--1 {
     font-size: 11px;
 }
 
-.dangnhap {
+.form__p--2 {
     text-align: center;
     margin-top: 32px;
 }
 
-.dangnhap a {
-
+.form__p--2 a {
     color: #de3535;
 }
 
-.dangnhap a:hover {
+.form__p--2 a:hover {
     text-decoration: underline;
 }

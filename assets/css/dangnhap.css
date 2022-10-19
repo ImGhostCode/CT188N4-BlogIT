@@ -24,7 +24,7 @@
      text-decoration: none;
  }
 
- fieldset {
+ .main__fieldset {
      padding: 35px;
      width: 530px;
      background-color: #fff;
@@ -34,14 +34,8 @@
 
  }
 
- legend {
+ .fieldset__legend {
      text-align: center;
- }
-
- body {
-     /* margin-left: auto;
-            margin-right: auto; */
-
  }
 
  #main {
@@ -51,7 +45,7 @@
      width: 100%;
  }
 
- .forget {
+ .form-wrapper {
      display: flex;
      justify-content: space-between;
      margin-bottom: 33px;
@@ -60,12 +54,11 @@
  }
 
 
- .lb {
+ .form__label {
      font-size: 14px;
  }
 
- input {
-
+ .form__input {
      padding: 10px 10px;
      margin-top: 5px;
      margin-bottom: 20px;
@@ -74,12 +67,11 @@
  }
 
  #Email,
- #pass {
+ #password {
      width: 100%;
  }
 
-
- .Sm {
+ .form__btn {
      background: #e40000;
      color: #fff;
      margin-top: 10px;
@@ -96,14 +88,14 @@
 
  }
 
- .Sm:hover {
+ .form__btn:hover {
      background-color: red;
      /* font-size: 17px;
      padding: 14px 15px; */
  }
 
- .Fb,
- .Gg {
+ .form__link--fb,
+ .form__link--gg {
      color: #fff;
      padding: 15px 10px;
      display: block;
@@ -115,52 +107,47 @@
 
  }
 
- .Fb span,
- .Gg span {
+ .form__link--fb span,
+ .form__link--gg span {
      margin-right: 5px;
  }
 
- .Fb {
+ .form__link--fb {
      background-color: #3b5999;
  }
 
- .Fb:hover {
+ .form__link--fb:hover {
      background-color: #3e6ed4;
  }
 
- .Gg {
+ .form__link--gg {
      background-color: #dd4b39;
  }
 
- .Gg:hover {
+ .form__link--gg:hover {
      background-color: red;
  }
 
- p {
+ .main__p {
      text-align: center;
- }
-
- .LINK {
-     display: block;
-     padding: 5px 5px;
-
- }
-
-
- p {
      font-size: 11px;
  }
 
- h4,
- h1 {
+ .form-social {
+     display: block;
+     padding: 5px 5px;
+ }
+
+ .form__heading--4,
+ .form__heading--1 {
      text-align: center;
  }
 
- h1 {
+ .form__heading--1 {
      font-size: 24px;
  }
 
- h4 {
+ .form__heading--4 {
      margin-top: 40px;
  }
 
@@ -168,7 +155,6 @@
      margin: 0;
  }
 
- form a,
- .forget a {
+ .form-wrapper a {
      color: #DE3535;
  }

@@ -73,43 +73,44 @@
         </div>
     </header>
     <main id="main">
-        <fieldset id="fieldset">
-            <legend id="legend">
+        <fieldset id="fieldset" class="main__fieldset">
+            <legend id="legend" class="fieldset__legend">
                 <img src="assets/images/logo.png" alt="Logo" height="60px" width="60px">
             </legend>
-            <h1>Tạo Tài Khoản</h1>
+            <h1 class="fieldset__heading">Tạo Tài Khoản</h1>
 
 
-            <form action="/action_page.php">
-                <div class="tt">
+            <form action="/action_page.php" class="fieldset__form">
+                <div class="form-wrapper">
                     <div>
-                        <label class="tt1" for="fname">Họ</label><br>
-                        <input type="text" id="First__Name" name="First__Name" value=""><br>
+                        <label for="fname">Họ</label><br>
+                        <input type="text" class="form__input" id="fname" value=""><br>
                     </div>
                     <div>
-                        <label class="tt1" for="lname">Tên</label><br>
-                        <input type="text" id="Name" name="Name" value=""><br><br>
+                        <label for="lname">Tên</label><br>
+                        <input type="text" class="form__input" id="lname" value=""><br><br>
                     </div>
                 </div>
 
 
-                <label class="tt1">Số Điện Thoại</label><br>
-                <input type="text" id="SDT" name="SDT" value=""><br>
-                <label class="tt1">Email</label><br>
-                <input type="text" id="Email__DK" name="Email__DK" value=""><br><br>
-                <label class="tt1">Mật Khẩu</label><br>
-                <input type="password" id="pass" name="password" value=""><br><br>
-                <label class="tt1">Xác Nhận Mật Khẩu</label><br>
-                <input type="password" id="pass" name="Confirm__PassWord" value=""><br><br>
+                <label>Số Điện Thoại</label><br>
+                <input class="form__input" type="text" id="SDT" name="SDT" value=""><br>
+                <label>Email</label><br>
+                <input class="form__input" type="text" id="Email__DK" name="Email__DK" value=""><br><br>
+                <label>Mật Khẩu</label><br>
+                <input class="form__input" type="password" id="pass" name="password" value=""><br><br>
+                <label>Xác Nhận Mật Khẩu</label><br>
+                <input class="form__input" type="password" id="pass" name="Confirm__PassWord" value=""><br><br>
 
-                <input class="Sm" type="submit" value="Đăng Ký">
-                <p class="p1">Chọn gửi, bạn đã đồng ý <a href="">Chính sách bảo mật</a> và <a href="">Điều khoản sử
+
+                <button class="form__btn form__input form__input--submit" type="submit">Đăng ký</button>
+                <p class="form__p--1">Chọn gửi, bạn đã đồng ý <a href="">Chính sách bảo mật</a> và <a href="">Điều khoản
+                        sử
                         dụng</a>
                     của chúng tôi. Bạn cũng chấp nhận rằng bạn biết rằng dữ liệu của bạn sẽ được lưu trữ.</p>
-                <p class="dangnhap">
+                <p class="form__p--2">
                     Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a>
                 </p>
-
             </form>
         </fieldset>
     </main>

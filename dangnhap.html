@@ -72,42 +72,42 @@
         </div>
     </header>
     <main id="main">
-        <fieldset>
-            <legend>
+        <fieldset class="main__fieldset">
+            <legend class="fieldset__legend">
                 <img src="assets/images/logo.png" height="60px" width="60px" alt="Logo">
             </legend>
 
-            <form action="/action_page.php">
-                <h1>Welcom back!</h1>
-                <label class="lb" for="fname">Email</label>
+            <form action="/action_page.php" class="fieldset__form">
+                <h1 class="form__heading--1">Welcom back!</h1>
+                <label class="form__label" for="Email">Email</label>
                 <br>
-                <input type="text" id="Email" name="Email" value="">
+                <input class="form__input" type="text" id="Email">
                 <br>
-                <label class="lb" for="fname">Mật Khẩu</label><br>
-                <input type="text" id="pass" name="pass" value=""><br><br>
+                <label class="form__label" for="password">Mật Khẩu</label><br>
+                <input class="form__input" type="text" id="password"><br><br>
 
-                <div class="forget">
+                <div class="form-wrapper">
                     <div class="check__box">
                         <input type="checkbox">
-                        <label class="lb" for="">Ghi Nhớ Đăng Nhập</label>
+                        <label class="form__label" for="">Ghi Nhớ Đăng Nhập</label>
                     </div>
 
-                    <a class="lb" href="">Bạn Quên Mật Khẩu?</a>
+                    <a class="form__label" href="#">Bạn Quên Mật Khẩu?</a>
                 </div>
-                <div class="forget">
+                <div class="form-wrapper">
                     <a href="dangky.html">Tạo Tài Khoản</a>
                     <!-- <input class="Sm" type="submit" value="Đăng Nhập"> -->
-                    <button class="Sm" type="submit">Đăng nhập</button>
+                    <button class="form__btn" type="submit">Đăng nhập</button>
                 </div>
-                <h4>Hoặc Đăng Nhập Bằng:</h4>
-                <div class="LINK">
-                    <a class="Fb" href=""> <span><i class="fa-brands fa-facebook"></i></span>Facebook</a>
+                <h4 class="form__heading--4">Hoặc Đăng Nhập Bằng:</h4>
+                <div class="form-social">
+                    <a class="form__link--fb" href=""> <span><i class="fa-brands fa-facebook"></i></span>Facebook</a>
                     <!-- display block   padding  background text-align icon-->
-                    <a class="Gg" href=""> <span><i class="fa-brands fa-google"></i></span>Google</a>
+                    <a class="form__link--gg" href=""> <span><i class="fa-brands fa-google"></i></span>Google</a>
                 </div>
             </form>
         </fieldset>
-        <p>Need help? Contact us at <a href="tel:++84 916 051 771">+84 916 051 771</a> or <a
+        <p class="main__p">Need help? Contact us at <a href="tel:++84 916 051 771">+84 916 051 771</a> or <a
                 href="mailto:support@nordiccoder.com">support@nordiccoder.com</a></p>
     </main>
     <footer id="footer">

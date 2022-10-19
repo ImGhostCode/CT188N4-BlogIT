@@ -37,42 +37,42 @@ body {
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
 }
 
-input {
+.right__input {
     width: 100%;
     padding: 10px;
     margin-bottom: 7px;
 }
 
-.main-left,
-.main-right {
+.main--left,
+.main--right {
     width: 50%;
     padding: 0 15px;
 }
 
-.main-left h2,
-.main-right h2,
-.main-left h4 {
+.main--left h2,
+.main--right h2,
+.main--left h4 {
     margin-bottom: 10px;
 }
 
-/* .main-left p:first-of-type {
+/* .main--left p:first-of-type {
     margin-bottom: 10px;
 } */
 
-.main-left p {
+.main--left p {
     margin-bottom: 5px;
 }
 
-.main-left a {
+.main--left a {
     text-decoration: none;
     color: #e24b30;
 }
 
-.main-right input[type="text"] {
+.main--right input {
     margin-bottom: 1rem;
 }
 
-.Sm {
+.right__btn {
     color: #fff;
     background-color: #de3535;
     outline: auto;
