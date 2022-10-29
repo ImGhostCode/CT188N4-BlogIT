@@ -24,3 +24,19 @@ btn_search.addEventListener('click', (e) => {
 
     }
 })
+
+const input_search = document.querySelector('#btn-search--click input')
+input_search.addEventListener('click', e => {
+    e.stopPropagation()
+})
+
+window.onclick = function (e) {
+    console.log(e.target.id === 'main')
+    if (e.target.id === 'main') {
+        btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.6s forwards'
+        setTimeout(() => {
+            btn_search_click.style.visibility = 'hidden'
+        }, 600)
+    }
+}
+

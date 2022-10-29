@@ -9,6 +9,10 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -224,7 +228,7 @@ body {
 
 /* Main */
 #main {
-    height: 1500px;
+    /* height: 1500px; */
     background-color: #1a1a1a;
 }
 
