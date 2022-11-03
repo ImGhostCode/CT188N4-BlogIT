@@ -30,7 +30,7 @@ body {
 
 .header-top {
     display: flex;
-    max-width: 56%;
+    width: 1068px;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -48,7 +48,7 @@ body {
 }
 
 .header__nav {
-    max-width: 56%;
+    width: 1068px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
