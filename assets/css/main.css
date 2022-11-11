@@ -247,7 +247,7 @@ body {
     margin-left: auto;
     color: #fff;
     margin-right: auto;
-    max-width: 56%;
+    width: 1068px;
     display: flex;
     padding: 27px 0;
 }

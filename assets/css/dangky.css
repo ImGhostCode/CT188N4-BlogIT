@@ -80,3 +80,7 @@ body {
 .form__p--2 a:hover {
     text-decoration: underline;
 }
+
+.btn-search--click {
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
+}

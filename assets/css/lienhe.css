@@ -21,6 +21,7 @@ body {
 
 #main {
     background-color: #fafafa;
+    /* background-color: #1a1a1a; */
     height: auto;
     width: 100%;
     padding: 40px 0;
@@ -37,7 +38,8 @@ body {
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
 }
 
-.right__input {
+.right__input,
+.right__textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 7px;
@@ -72,10 +74,25 @@ body {
     margin-bottom: 1rem;
 }
 
+.main--right h2 {
+    margin: 0 0 20px;
+}
+
 .right__btn {
+    padding: 8px 0;
+    width: 100%;
     color: #fff;
     background-color: #de3535;
     outline: auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.right__btn:hover {
+    background-color: #fff;
+    border: 1px solid #de3535;
+    color: #de3535;
+    cursor: pointer;
 }
 
 /* a :hover {
@@ -86,4 +103,8 @@ body {
     height: 350px;
     margin-top: 5px;
     border: 1px solid #ccc;
+}
+
+.btn-search--click {
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
 }
