@@ -31,7 +31,7 @@ input_search.addEventListener('click', e => {
 })
 
 window.onclick = function (e) {
-    console.log(e.target.id === 'main')
+    // console.log(e.target.id === 'main')
     if (e.target.id === 'main') {
         btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.6s forwards'
         setTimeout(() => {
@@ -39,4 +39,50 @@ window.onclick = function (e) {
         }, 600)
     }
 }
+
+
+// Validate subscribe form 
+const footer_top_input = document.getElementById('footer-top__input')
+const footer_top_btn = document.getElementById('footer-top__btn')
+const footer_top_p = document.getElementById('footer-top__p')
+const footer_top_form = document.getElementById('footer-top__form')
+
+footer_top_btn.onclick = function (e) {
+    if (footer_top_input.value === '') {
+        e.preventDefault()
+        footer_top_p.style.display = 'block'
+    } else
+        footer_top_form.submit()
+}
+
+//Show and hide password
+var x = true;
+function myFunction() {
+    if (x) {
+        document.getElementById('password').type = "text";
+        document.getElementsByClassName('form-group__btn-hide')[0].style.display = 'block'
+        document.getElementsByClassName('form-group__btn-show')[0].style.display = 'none'
+        x = false;
+    } else {
+        document.getElementById('password').type = "password";
+        document.getElementsByClassName('form-group__btn-show')[0].style.display = 'block'
+        document.getElementsByClassName('form-group__btn-hide')[0].style.display = 'none'
+        x = true;
+    }
+}
+function myFunction2() {
+    if (x) {
+        document.getElementById('comfirm-password').type = "text";
+        document.getElementsByClassName('form-group__btn-hide')[1].style.display = 'block'
+        document.getElementsByClassName('form-group__btn-show')[1].style.display = 'none'
+        x = false;
+    } else {
+        document.getElementById('comfirm-password').type = "password";
+        document.getElementsByClassName('form-group__btn-show')[1].style.display = 'block'
+        document.getElementsByClassName('form-group__btn-hide')[1].style.display = 'none'
+        x = true;
+    }
+}
+
+
 

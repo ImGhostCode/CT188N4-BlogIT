@@ -67,7 +67,7 @@
 
                 <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
                     <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
-                            href="">Search</a></div>
+                            href="/timkiem.html">Search</a></div>
                 </button>
             </nav>
         </div>
@@ -81,11 +81,17 @@
             <form action="/action_page.php" class="fieldset__form">
                 <h1 class="form__heading--1">Welcom back!</h1>
                 <label class="form__label" for="Email">Email</label>
-                <br>
-                <input class="form__input" type="text" id="Email">
-                <br>
-                <label class="form__label" for="password">Mật Khẩu</label><br>
-                <input class="form__input" type="text" id="password"><br><br>
+                <input class="form__input" type="email" id="Email">
+
+                <div class="form-group">
+                    <label class="form__label" for="password">Mật Khẩu</label>
+                    <input class="form__input" type="password" id="password">
+                    <button onclick="myFunction()" type="button" class="form-group__btn form-group__btn-show"><i
+                            class="fa-solid fa-eye-slash"></i></button>
+                    <button onclick="myFunction()" type="button" hidden class="form-group__btn form-group__btn-hide"><i
+                            class="fa-solid fa-eye"></i></button>
+                </div>
+
 
                 <div class="form-wrapper">
                     <div class="check__box">
@@ -93,7 +99,7 @@
                         <label class="form__label" for="">Ghi Nhớ Đăng Nhập</label>
                     </div>
 
-                    <a class="form__label" href="#">Bạn Quên Mật Khẩu?</a>
+                    <a class="form__label form__label--forget" href="#">Bạn Quên Mật Khẩu?</a>
                 </div>
                 <div class="form-wrapper">
                     <a href="dangky.html">Tạo Tài Khoản</a>
@@ -117,9 +123,10 @@
                 <p>Đăng ký để được nhận ngay những tin tức độc quyền về sự kiện hấp dẫn và chương trình khuyến mãi sắp
                     diễn
                     ra!</p>
-                <form action="" class="footer-top__form">
-                    <input type="email" class="footer-top__input" placeholder="Email">
-                    <button type="submit" class="footer-top__btn">Subscribe</button>
+                <form action="" class="footer-top__form" id="footer-top__form">
+                    <input type="text" class="footer-top__input" id="footer-top__input" placeholder="Email">
+                    <button type="submit" class="footer-top__btn" id="footer-top__btn">Subscribe</button>
+                    <p class="footer-top__p" id="footer-top__p">Vui lòng điền đầy đủ thông tin</p>
                 </form>
 
             </div>

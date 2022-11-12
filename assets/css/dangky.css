@@ -19,8 +19,13 @@
     text-align: center;
 }
 
+.fieldset__legend img {
+    border-radius: 8px;
+}
+
 .fieldset__heading {
     text-align: center;
+    margin-top: 10px;
 }
 
 body {
@@ -83,4 +88,25 @@ body {
 
 .btn-search--click {
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
+}
+
+
+
+.form-group__btn {
+    border: none;
+    outline: none;
+    color: #222;
+    margin-top: -45px;
+    margin-right: 15px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: 18px;
+}
+
+
+
+.form-group__btn:hover {
+    color: #de3535;
 }

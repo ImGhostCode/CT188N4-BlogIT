@@ -69,7 +69,7 @@
 
                 <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
                     <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
-                            href="">Search</a></div>
+                            href="/timkiem.html">Search</a></div>
                 </button>
             </nav>
         </div>
@@ -86,23 +86,36 @@
                 <div class="form-wrapper">
                     <div>
                         <label for="fname">Họ</label><br>
-                        <input type="text" class="form__input" id="fname" value=""><br>
+                        <input type="text" class="form__input" id="fname" required><br>
                     </div>
                     <div>
                         <label for="lname">Tên</label><br>
-                        <input type="text" class="form__input" id="lname" value=""><br><br>
+                        <input type="text" class="form__input" id="lname" required><br><br>
                     </div>
                 </div>
 
 
-                <label>Số Điện Thoại</label><br>
-                <input class="form__input" type="text" id="SDT" name="SDT" value=""><br>
-                <label>Email</label><br>
-                <input class="form__input" type="text" id="Email__DK" name="Email__DK" value=""><br><br>
-                <label>Mật Khẩu</label><br>
-                <input class="form__input" type="password" id="pass" name="password" value=""><br><br>
-                <label>Xác Nhận Mật Khẩu</label><br>
-                <input class="form__input" type="password" id="pass" name="Confirm__PassWord" value=""><br><br>
+                <label>Số Điện Thoại</label>
+                <input class="form__input" type="tel" id="SDT" name="SDT" required>
+                <label>Email</label>
+                <input class="form__input" type="email" id="Email__DK" name="Email__DK" required>
+                <div class="form-group">
+                    <label>Mật Khẩu</label>
+                    <input class="form__input" type="password" id="password" name="password" required>
+                    <button onclick="myFunction()" type="button" class="form-group__btn form-group__btn-show"><i
+                            class="fa-solid fa-eye-slash"></i></button>
+                    <button onclick="myFunction()" type="button" hidden class="form-group__btn form-group__btn-hide"><i
+                            class="fa-solid fa-eye"></i></button>
+                </div>
+                <div class="form-group">
+                    <label>Xác Nhận Mật Khẩu</label>
+                    <input class="form__input" type="password" id="comfirm-password" name="Confirm__PassWord" required>
+
+                    <button onclick="myFunction2()" type="button" class="form-group__btn form-group__btn-show"><i
+                            class="fa-solid fa-eye-slash"></i></button>
+                    <button onclick="myFunction2()" type="button" hidden class="form-group__btn form-group__btn-hide"><i
+                            class="fa-solid fa-eye"></i></button>
+                </div>
 
 
                 <button class="form__btn form__input form__input--submit" type="submit">Đăng ký</button>
@@ -122,9 +135,10 @@
                 <p>Đăng ký để được nhận ngay những tin tức độc quyền về sự kiện hấp dẫn và chương trình khuyến mãi sắp
                     diễn
                     ra!</p>
-                <form action="" class="footer-top__form">
-                    <input type="email" class="footer-top__input" placeholder="Email">
-                    <button type="submit" class="footer-top__btn">Subscribe</button>
+                <form action="" class="footer-top__form" id="footer-top__form">
+                    <input type="text" class="footer-top__input" id="footer-top__input" placeholder="Email">
+                    <button type="submit" class="footer-top__btn" id="footer-top__btn">Subscribe</button>
+                    <p class="footer-top__p" id="footer-top__p">Vui lòng điền đầy đủ thông tin</p>
                 </form>
 
             </div>
