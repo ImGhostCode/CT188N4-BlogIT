@@ -101,6 +101,7 @@
 
 
  .form-group__btn {
+     background: none;
      border: none;
      outline: none;
      color: #222;

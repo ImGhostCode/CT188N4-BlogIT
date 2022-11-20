@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <script defer src="./assets/js/main.js"></script>
+    <script defer src="./assets/js/cart.js"></script>
+    <title>Cart</title>
+</head>
+
+<body id="body">
+    <header id="header">
+        <div class="header-top">
+            <a class="header-top__link" href="/lienhe.html">Contact us</a>
+            <div class="header-top-wrapper">
+                <a href="#"><i class="header-top__link fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="header-top__link fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="header-top__link fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="header-top__link fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="header__nav-wraper">
+            <div class="header-brand">
+
+            </div>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <a href="#"><img src="./assets/images/logo-blogit.jpg" alt="logo" width="195px" height="67px"
+                            class="nav__img"></a>
+                    <li class="nav__item"><a class="nav__item-link" href="/trangchu.html">HOME</a>
+                    <li class="nav__item"><a class="nav__item-link" href="/khoahoc.html">KHÓA HỌC</a>
+                    </li>
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="#">Al Machine Learning</a></li>
+                            <li class="dropdown-item"><a href="#">Frontend</a></li>
+                            <li class="dropdown-item"><a href="#">Backend</a></li>
+                            <li class="dropdown-item"><a href="#">Fullstack</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">KỸ NĂNG LÀM VIỆC <span><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="#">Kinh nghiệm phỏng vấn</a></li>
+                            <li class="dropdown-item"><a href="#">Chuẩn hóa CV IT</a></li>
+                            <li class="dropdown-item"><a href="#">Đàm phán lương thưởng</a></li>
+                            <li class="dropdown-item"><a href="#">Cẩm nang tuyển dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">TÀI KHOẢN <span><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="/dangnhap.html">Đăng nhập</a></li>
+                            <li class="dropdown-item"><a href="/dangky.html">Đăng ký</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav-wrapper-right center">
+                    <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
+                                href="/timkiem.html">Search</a></div>
+                    </button>
+
+                    <button onclick="linkToCart()" class="nav__btn-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="btn-cart-number">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="cart-container">
+            <h1 class="cart__heading--1">Shopping Cart</h1>
+            <div class="cart__heading--3"> <span>0</span> Courses in Cart</div>
+            <div class="cart-wrapper">
+                <div class="cart-courses">
+                    <!-- <div class="cart-item">
+                        <img src="./assets/images/giohang/item1.jpg" class="cart__img" alt="item1">
+                        <div class="cart-item-info">
+                            <a href="#" class="cart-item__link">Python for Beginners - Learn Programming from
+                                scratch</a>
+                            <p class="cart-item-author">By Edwin Diaz and 1 other</p>
+                            <p class="cart-item-rating">
+                                <span style="color: #b4690e;">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="item-rate-number">(253 ratings)</span>
+                            </p>
+                        </div>
+                        <div class="cart-item-price-wrapper">
+                            <p class="cart-item-price">479,000đ</p>
+                            <p class="cart-item-price-sale">900,000đ</p>
+                        </div>
+                        <div class="cart-btn-wrapper">
+                            <button type="button" class="cart__btn-close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="./assets/images/giohang/item1.jpg" class="cart__img" alt="item1">
+                        <div class="cart-item-info">
+                            <a href="#" class="cart-item__link">Python for Beginners - Learn Programming from
+                                scratch</a>
+                            <p class="cart-item-author">By Edwin Diaz and 1 other</p>
+                            <p class="cart-item-rating">
+                                <span style="color: #b4690e;">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="item-rate-number">(253 ratings)</span>
+                            </p>
+                        </div>
+                        <div class="cart-item-price-wrapper">
+                            <p class="cart-item-price">479,000đ</p>
+                            <p class="cart-item-price-sale">900,000đ</p>
+                        </div>
+                        <div class="cart-btn-wrapper">
+                            <button type="button" class="cart__btn-close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="./assets/images/giohang/item1.jpg" class="cart__img" alt="item1">
+                        <div class="cart-item-info">
+                            <a href="#" class="cart-item__link">Python for Beginners - Learn Programming from
+                                scratch</a>
+                            <p class="cart-item-author">By Edwin Diaz and 1 other</p>
+                            <p class="cart-item-rating">
+                                <span style="color: #b4690e;">4.8</span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="item-rate-number">(253 ratings)</span>
+                            </p>
+                        </div>
+                        <div class="cart-item-price-wrapper">
+                            <p class="cart-item-price">479,000đ</p>
+                            <p class="cart-item-price-sale">900,000đ</p>
+                        </div>
+                        <div class="cart-btn-wrapper">
+                            <button type="button" class="cart__btn-close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="cart-checkout">
+                    <p class="cart-checkout-text">Total:</p>
+                    <p class="cart-sale-price">936.000đ</p>
+                    <p class="cart-total-price">₫6,796,000</p>
+                    <button type="button" class="cart__btn-checkout">Checkout</button>
+                </div>
+
+            </div>
+            <div class="cart-empty">
+                <img class="cart-empty__img" src="./assets/images/giohang/empty.jpg" alt="empty">
+                <p class="cart-empty-text">Your cart is empty. Keep shopping to find a course!</p>
+                <a class="cart-empty__link" href="/khoahoc.html">Go shopping</a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-top-wrapper">
+            <div class="footer-top">
+                <p>Đăng ký để được nhận ngay những tin tức độc quyền về sự kiện hấp dẫn và chương trình khuyến mãi sắp
+                    diễn
+                    ra!</p>
+                <form action="" class="footer-top__form" id="footer-top__form">
+                    <input type="text" class="footer-top__input" id="footer-top__input" placeholder="Email">
+                    <button type="submit" class="footer-top__btn" id="footer-top__btn">Subscribe</button>
+                    <p class="footer-top__p" id="footer-top__p">Vui lòng điền đầy đủ thông tin</p>
+                </form>
+
+            </div>
+        </div>
+        <div class="footer-mid-wrapper">
+            <div class="footer-mid">
+                <div class="footer-mid__img">
+                    <img src="./assets/images/logo-blogit.jpg" alt="logo">
+                </div>
+                <div class="footer-mid-about">
+                    <h4>ABOUT US</h4>
+                    <p>Blog IT is a place where Create IT can share its ideas, discoveries and thoughts with the world.
+                    </p>
+                    <p>Contact us: <a href="mailto:info@create.pt">info@create.pt</a></p>
+                </div>
+                <div class="footer-mid-follow">
+                    <h4>FOLLOW US</h4>
+                    <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                    <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Blog IT 2022. Đã đăng ký Bản quyền</p>
+        </div>
+
+        <button id="footer__btn-top" class="footer__btn-top">
+            <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+        </button>
+    </footer>
+</body>
+
+</html>

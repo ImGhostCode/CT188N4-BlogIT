@@ -14,10 +14,10 @@ const btn_search_click = document.getElementById('btn-search--click')
 btn_search.addEventListener('click', (e) => {
     // e.stopPropagation()  
     if (btn_search_click.style.visibility === 'hidden') {
-        btn_search_click.style.animation = 'btn-search-animation-show ease-in-out 0.6s forwards'
+        btn_search_click.style.animation = 'btn-search-animation-show ease-in-out 0.4s forwards'
         btn_search_click.style.visibility = 'visible'
     } else {
-        btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.6s forwards'
+        btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.4s forwards'
         setTimeout(() => {
             btn_search_click.style.visibility = 'hidden'
         }, 600)
@@ -33,7 +33,7 @@ input_search.addEventListener('click', e => {
 window.onclick = function (e) {
     // console.log(e.target.id === 'main')
     if (e.target.id === 'main') {
-        btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.6s forwards'
+        btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.4s forwards'
         setTimeout(() => {
             btn_search_click.style.visibility = 'hidden'
         }, 600)
@@ -84,5 +84,25 @@ function myFunction2() {
     }
 }
 
+// Btn cart
+function linkToCart() {
+    window.location.href = '/giohang.html'
+}
 
+let cart
+let cartStored = window.localStorage.getItem('cart')
+if (cartStored === null) {
+    cart = []
+} else {
+    cart = JSON.parse(cartStored)
+}
+
+// Display number of item 
+document.querySelector("#btn-cart-number").textContent = cart.length ? cart.length : '0'
+
+
+
+function VNDConverter(price) {
+    return price.toLocaleString('de-ED', { style: 'currency', currency: 'VND' })
+}
 

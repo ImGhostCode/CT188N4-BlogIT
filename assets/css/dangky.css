@@ -103,6 +103,7 @@ body {
     z-index: 1;
     cursor: pointer;
     width: 18px;
+    background: none;
 }
 
 

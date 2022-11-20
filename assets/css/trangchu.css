@@ -89,42 +89,37 @@
 .section-newest__link--1 {
     grid-area: one;
     height: 460px;
-    background: url('../images/trangchu/news1.jpg') center center no-repeat !important;
-    /* transition: background ease-out 2s; */
+    background: url('../images/trangchu/newest1.jpg') center center no-repeat !important;
 
+}
+
+.section-newest__link {
+    transition: transform 0.3s ease, opacity 0.3s;
+    border-radius: 5px;
 }
 
 .section-newest__link:hover {
     transform: scale3d(1.1, 1.1, 1);
-    transition: transform 0.3s ease, opacity 0.3s;
-    /* background: url('../images/trangchu/news1.jpg') left center no-repeat !important; */
 }
 
-/* .section-newest__link-1::before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 100%);
-} */
 
 .section-newest__link--2 {
     grid-area: two;
     height: 260px;
-    background: url('../images/trangchu/news4.png') center center no-repeat !important;
+    background: url('../images/trangchu/newest2.jpg') center center no-repeat !important;
 
 }
 
 .section-newest__link--3 {
     grid-area: three;
     height: 200px;
-    background: url('../images/trangchu/news2.jpg') center center no-repeat !important;
+    background: url('../images/trangchu/newest3.jpg') center center no-repeat !important;
 }
 
 .section-newest__link--4 {
     grid-area: four;
     height: 200px;
-    background: url('../images/trangchu/news3.jpg') center center no-repeat !important;
+    background: url('../images/trangchu/newest4.jpg') center center no-repeat !important;
 }
 
 .section-newest img {
@@ -215,19 +210,20 @@
 
 .main-item__link {
     margin-bottom: 18px;
+    text-decoration: none;
 
 }
 
 .section-main-item--left a:first-of-type {
-    background: url(../images/trangchu/main1.jpg) center center no-repeat;
+    background: url(../images/trangchu/laptrinh1.jpg) center center no-repeat;
 }
 
 .section-main-item--center a:first-of-type {
-    background: url(../images/trangchu/main2.png) center center no-repeat;
+    background: url(../images/trangchu/hr1.png) center center no-repeat;
 }
 
 .section-main-item--right a:first-of-type {
-    background: url(../images/trangchu/main3.jpg) center center no-repeat;
+    background: url(../images/trangchu/phongvan1.jpg) center center no-repeat;
 }
 
 .item__link-content--newest h3 {

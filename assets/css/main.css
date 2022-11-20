@@ -141,10 +141,11 @@ body {
     background-color: #000;
     color: #fff;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     padding: 0 16px;
     position: relative;
+    height: 100%;
 }
 
 .nav__btn-search:hover {
@@ -216,6 +217,7 @@ body {
     }
 }
 
+
 @keyframes btn-search-animation-hide {
     from {
         opacity: 1;
@@ -227,6 +229,32 @@ body {
         opacity: 0;
         transform: translateY(30%);
     }
+}
+
+.nav__btn-cart {
+    height: 100%;
+    font-size: 20px;
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.nav__btn-cart span {
+    position: absolute;
+    color: #fff;
+    background-color: rgb(164, 53, 240);
+    top: 15px;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    font-size: 12px;
+    right: -10px;
+}
+
+.nav__btn-cart:hover {
+    cursor: pointer;
 }
 
 

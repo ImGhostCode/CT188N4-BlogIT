@@ -1,0 +1,178 @@
+.main-container {
+    width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main {
+    background: #fff;
+}
+
+.main-courses {
+    font-size: 12px;
+    color: #c3c3c3;
+    margin-top: 30px;
+}
+
+.main-courses a {
+    color: #c3c3c3;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.main-courses span {
+    font-size: 8px;
+    margin: 0 3px;
+}
+
+.main-search-box {
+    background-color: #fff;
+}
+
+.search-box {
+    width: calc(100% - 170px);
+}
+
+.form-select {
+    width: 170px !important;
+}
+
+
+
+.input-group-text {
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.input-group-text,
+.form-control {
+    border: none !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+}
+
+
+.section-card {
+    cursor: pointer;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, .2);
+    transition: 0.3s;
+    position: relative;
+    height: 585px;
+}
+
+.section-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 1px 8px 5px rgba(0, 0, 0, .2);
+}
+
+.section-card:hover .card-title {
+    color: #de3535;
+}
+
+.card .card-text i {
+    color: #e59819;
+}
+
+
+.card-body p:first-of-type {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.card-more-info {
+    position: absolute;
+    left: 106%;
+    width: 340px;
+    opacity: 0;
+    transition: 0.1s ease-out;
+    transform: scale(0.8);
+    transition-delay: 0.1s;
+    z-index: 999 !important;
+    visibility: hidden;
+}
+
+.card:hover .card-more-info {
+    visibility: visible;
+}
+
+.section-card:hover .card-more-info {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.card-more-info::after {
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    content: "";
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.featured-courses-slide {
+    overflow: hidden;
+}
+
+.featured-courses-slide .card {
+    /* transform: translateX(100%); */
+    animation: slideToLeft ease-out .5s;
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.featured-courses-slide:hover,
+.featured-courses-slide:hover .card {
+    background: #f7f9fa;
+    cursor: pointer;
+}
+
+.section-featured-courses__btn {
+    width: 3.2rem;
+    height: 3.2rem;
+
+}
+
+.btn-add-cart {
+    background: #0bb732;
+    font-weight: bold;
+    bottom: 15px;
+    position: absolute;
+}
+
+.btn:hover {
+    background: #08a32c;
+}
+
+.btn-search--click {
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
+}

@@ -39,6 +39,7 @@
                     <a href="#"><img src="./assets/images/logo-blogit.jpg" alt="logo" width="195px" height="67px"
                             class="nav__img"></a>
                     <li class="nav__item"><a class="nav__item-link" href="/trangchu.html">HOME</a>
+                    <li class="nav__item"><a class="nav__item-link" href="/khoahoc.html">KHÓA HỌC</a>
                     </li>
                     <li class="nav__item dropdown"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
@@ -67,10 +68,17 @@
                     </li>
                 </ul>
 
-                <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
-                            href="/timkiem.html">Search</a></div>
-                </button>
+                <div class="nav-wrapper-right center">
+                    <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
+                                href="/timkiem.html">Search</a></div>
+                    </button>
+
+                    <button onclick="linkToCart()" class="nav__btn-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="btn-cart-number">0</span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>

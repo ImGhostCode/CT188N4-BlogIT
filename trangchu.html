@@ -36,6 +36,7 @@
                     <a href="#"><img src="./assets/images/logo-blogit.jpg" alt="logo" width="195px" height="67px"
                             class="nav__img"></a>
                     <li class="nav__item"><a class="nav__item-link" href="/trangchu.html">HOME</a>
+                    <li class="nav__item"><a class="nav__item-link" href="/khoahoc.html">KHÓA HỌC</a>
                     </li>
                     <li class="nav__item dropdown"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
@@ -64,10 +65,17 @@
                     </li>
                 </ul>
 
-                <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
-                            href="/timkiem.html">Search</a></div>
-                </button>
+                <div class="nav-wrapper-right center">
+                    <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
+                                href="/timkiem.html">Search</a></div>
+                    </button>
+
+                    <button onclick="linkToCart()" class="nav__btn-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="btn-cart-number">0</span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -77,8 +85,8 @@
                 <a href="#" class="section-newest__link--1 section-newest__link">
                     <div class="section-newest__link-content section-newest__link-content--1">
                         <p>MISC</p>
-                        <h3>How to use SEO meta tag rule for Page Designer in SFCC</h3>
-                        <p><b>David Pereira</b> - 07/09/2022</p>
+                        <h3>Javascript là gì? Làm thế nào để trở thành lập trình viên Javascript?</h3>
+                        <p><b>Phạm Minh Khoa</b> - 03/11/2022</p>
                     </div>
                 </a>
                 <a href="/blog.html" class="section-newest__link--2 section-newest__link">
@@ -90,14 +98,14 @@
                 <a href="#" class="section-newest__link--3 section-newest__link">
                     <div class="section-newest__link-content">
                         <p>MISC</p>
-                        <h4>Session management in Salesforce B2C Commerce Cloud</h4>
+                        <h4>Lập Trình với Game Flappybird Python</h4>
                     </div>
                 </a>
                 <a href="#" class="section-newest__link--4 section-newest__link">
                     <div class="section-newest__link-content">
 
                         <p>MISC</p>
-                        <h4>Hermano's Roasted Lamb</h4>
+                        <h4>HTình hình hiện tại và tương lai của IoT năm 2022</h4>
                     </div>
                 </a>
             </section>
@@ -107,47 +115,47 @@
                 <div class="section-new__row">
                     <a href="#" class="section-new__link">
                         <img src="./assets/images/trangchu/new1.jpg" alt="new1" height="134" width="100%">
-                        <p>Hội nghị Devcon 2022 dành cho cộng đồng Ethereum</p>
+                        <p>Lộ trình từng bước trở thành Machine Learning Engineer</p>
                     </a>
                     <a href="#" class="section-new__link">
                         <img src="./assets/images/trangchu/new2.jpg" alt="new2" height="134" width="100%">
-                        <p>CEO TopDev nhấn mạnh về yếu tố “Con người” trong thời...
+                        <p>Bàn Về Định Nghĩa Yêu Cầu – Phần 2
                         </p>
                     </a>
                     <a href="#" class="section-new__link">
                         <img src="./assets/images/trangchu/new3.jpg" alt="new3" height="134" width="100%">
-                        <p>Giới thiệu về OffHeap và ZeroCopy</p>
+                        <p>9 Câu Hỏi Phỏng Vấn Frontend Developer Có Thể Bạn Chưa...</p>
                     </a>
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new4.png" alt="new4" height="134" width="100%">
-                        <p>KICC HCMC x TOPDEV – Cái Bắt Tay Góp Phần Phát...</p>
+                        <img src="./assets/images/trangchu/new4.jpg" alt="new4" height="134" width="100%">
+                        <p>AngularJS Là Gì? Khác Biệt Nào Giữa Angular Và Frontend Framework...</p>
                     </a>
                     <a href="#" class="section-new__link">
                         <img src="./assets/images/trangchu/new5.jpg" alt="new5" height="134" width="100%">
-                        <p>Bàn Về Định Nghĩa Yêu Cầu</p>
+                        <p>Khắc phục tình trạng VPN WireGuard bị treo</p>
                     </a>
                 </div>
                 <div class="section-new__row">
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new1.jpg" alt="new1" height="134" width="100%">
-                        <p>Hội nghị Devcon 2022 dành cho cộng đồng Ethereum</p>
+                        <img src="./assets/images/trangchu/new6.jpg" alt="new1" height="134" width="100%">
+                        <p>Kỹ Sư Cầu Nối (BrSE) Là Gì? BrSE Cần Học Những...</p>
                     </a>
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new2.jpg" alt="new2" height="134" width="100%">
-                        <p>CEO TopDev nhấn mạnh về yếu tố “Con người” trong thời...
+                        <img src="./assets/images/trangchu/new7.jpg" alt="new2" height="134" width="100%">
+                        <p>Python Là Gì? Các Bước Tự Học Lập Trình Python
                         </p>
                     </a>
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new3.jpg" alt="new3" height="134" width="100%">
-                        <p>Giới thiệu về OffHeap và ZeroCopy</p>
+                        <img src="./assets/images/trangchu/new8.jpg" alt="new3" height="134" width="100%">
+                        <p>So Sánh Giữa Regression Testing Và Retesting</p>
                     </a>
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new4.png" alt="new4" height="134" width="100%">
-                        <p>KICC HCMC x TOPDEV – Cái Bắt Tay Góp Phần Phát...</p>
+                        <img src="./assets/images/trangchu/new9.jpg" alt="new4" height="134" width="100%">
+                        <p>8 Bước Trong Lộ Trình Trở Thành DevOps Engineer</p>
                     </a>
                     <a href="#" class="section-new__link">
-                        <img src="./assets/images/trangchu/new5.jpg" alt="new5" height="134" width="100%">
-                        <p>Bàn Về Định Nghĩa Yêu Cầu</p>
+                        <img src="./assets/images/trangchu/new10.jpg" alt="new5" height="134" width="100%">
+                        <p>Mức lương Lập trình viên tại Việt Nam năm 2022</p>
                     </a>
                 </div>
             </section>
@@ -157,44 +165,50 @@
                     <p><strong>Lập trình</strong></p>
                     <a href="#" class="main-item__link--newest">
                         <div class="item__link-content--newest">
-                            <h3>9 Câu Hỏi Phỏng Vấn Frontend Developer Có Thể Bạn Chưa Biết</h3>
+                            <h3>JavaScript là gì? Làm thế nào để trở thành lập trình viên JavaScript</h3>
+                            <p>November 3, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/laptrinh2.jpg" alt="laptrinh2" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Lập Trình với Game Flappybird Python</h4>
+                            <p>November 2, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/laptrinh3.jpg" alt="laptrinh3" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Tình hình hiện tại và tương lai của IoT năm 2022</h4>
+                            <p>November 1, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/laptrinh4.jpg" alt="laptrinh4" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Lộ trình từng bước trở thành Machine Learning Engineer</h4>
+                            <p>October 31, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/laptrinh5.jpg" alt="laptrinh5" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Bàn Về Định Nghĩa Yêu Cầu – Phần 2</h4>
+                            <p>October 28, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/laptrinh6.jpg" alt="laptrinh6" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>9 Câu Hỏi Phỏng Vấn Frontend Developer Có Thể Bạn Chưa Biết</h4>
                             <p>October 26, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/laptrinh7.jpg" alt="laptrinh7" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Bí Kíp Pass Phỏng Vấn Coding Amazon, Apple, Facebook, Microsoft Mà Không Cần Leet Code
-                                Quá Nhiều</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>AngularJS Là Gì? Khác Biệt Nào Giữa Angular Và Frontend Framework Khác</h4>
+                            <p>October 25, 2022</p>
                         </div>
                     </a>
                     <div class="main-item-btn-wrapper">
@@ -206,45 +220,43 @@
                     <p><strong>HR</strong></p>
                     <a href="#" class="main-item__link--newest">
                         <div class="item__link-content--newest">
-                            <h3>KICC HCMC x TOPDEV 2022 KICC HCMC x TOPDEV – Cái Bắt Tay Góp Phần Phát Triển Tài Năng IT
-                                Của
-                                Việt Nam</h3>
+                            <h3>KICC HCMC x TOPDEV – Cái Bắt Tay Góp Phần Phát Triển Tài Năng IT Của Việt Nam</h3>
                             <p>October 7, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/hr2.jpg" alt="hr2" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
+                            <h4>Kinh nghiệm tự xây dựng business website</h4>
+                            <p>October 3, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/hr3.jpg" alt="hr3" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Fresher, Junior, Senior là gì? Yêu cầu và nhiệm vụ</h4>
+                            <p>September 28, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/hr4.jpg" alt="hr4" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>9 kênh tuyển dụng IT hiệu quả bạn nên sử dụng</h4>
+                            <p>August 30, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/hr5.jpg" alt="hr5" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Trang web tuyển dụng IT uy tín – Cầu nối nhà tuyển dụng và người tìm việc</h4>
                             <p>October 24, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/hr6.jpg" alt="hr6" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
-                        </div>
-                    </a>
-                    <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
-                        <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Cách lập trình viên chọn một công ty tốt</h4>
+                            <p>July 22, 2022</p>
                         </div>
                     </a>
                     <div class="main-item-btn-wrapper">
@@ -256,45 +268,53 @@
                     <p><strong>Phỏng vấn</strong></p>
                     <a href="#" class="main-item__link--newest">
                         <div class="item__link-content--newest">
-                            <h3>Câu hỏi phỏng vấn Fullstack Developer Bộ câu hỏi phỏng vấn Fullstack Developer hay và
-                                khó
+                            <h3>Bộ câu hỏi phỏng vấn Fullstack Developer hay và khó
                             </h3>
                             <p>September 19, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/phongvan2.jpg" alt="phongvan2" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Những câu hỏi phỏng vấn React thường gặp</h4>
+                            <p>September 12, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/phongvan3.jpg" alt="phongvan3" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Bí Kíp Pass Phỏng Vấn Coding Amazon, Apple, Facebook, Microsoft Mà Không Cần Leet Code
+                                Quá Nhiều</h4>
+                            <p>June 13, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/phongvan4.jpg" alt="phongvan4" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Hướng Dẫn Trả Lời Thư Mời Phỏng Vấn Với Nhà Tuyển Dụng</h4>
+                            <p>February 18, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/phongvan5.jpg" alt="phongvan5" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Cách Viết Thư Cảm Ơn Phỏng Vấn Chinh Phục Nhà Tuyển Dụng Từ 3 Giây Đầu Tiên!</h4>
+                            <p>February 8, 2022</p>
                         </div>
                     </a>
                     <a href="#" class="main-item__link d-flex">
-                        <img src="./assets/images/trangchu/main1.jpg" alt="main1" width="80px" height="60px">
+                        <img src="./assets/images/trangchu/phongvan6.jpg" alt="phongvan6" width="80px" height="60px">
                         <div class="item__link-content" style="margin-left: 12px;">
-                            <h4>Khắc phục tình trạng VPN WireGuard bị treo</h4>
-                            <p>October 24, 2022</p>
+                            <h4>Tổng Hợp Những Câu Hỏi Phỏng Vấn Front End Thường Xuyên Xuất Hiện Trong Các Buổi Phỏng
+                                Vấn</h4>
+                            <p>January 6, 2022</p>
+                        </div>
+                    </a>
+                    <a href="#" class="main-item__link d-flex">
+                        <img src="./assets/images/trangchu/phongvan7.jpg" alt="phongvan7" width="80px" height="60px">
+                        <div class="item__link-content" style="margin-left: 12px;">
+                            <h4>Kinh Nghiệm Phỏng Vấn Tester Thành Công Được Áp Dụng Nhiều Nhất</h4>
+                            <p>December 22, 2021</p>
                         </div>
                     </a>
                     <div class="main-item-btn-wrapper">
@@ -310,7 +330,7 @@
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new1.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other1.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
                                 <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
                                 <p>August 5, 2022</p>
@@ -320,50 +340,71 @@
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new2.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other2.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
-                                <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
-                                <p>August 5, 2022</p>
+                                <h3>NFQ Asia phát động chương trình Gây Quỹ Cộng Đồng “Đối Ứng 10,000 USD” hỗ trợ sinh
+                                    viên IT có hoàn cảnh khó khăn.</h3>
+                                <p>July 26, 2022</p>
                             </div>
                         </a>
                     </div>
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new3.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other3.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
-                                <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
-                                <p>August 5, 2022</p>
+                                <h3>Những chiến binh công nghệ kiến tạo hành tinh số Viettel Digital</h3>
+                                <p>July 22, 2022</p>
                             </div>
                         </a>
                     </div>
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new1.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other4.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
-                                <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
-                                <p>August 5, 2022</p>
+                                <h3>EPAM Việt Nam được vinh danh là “Nơi Làm việc Tốt nhất Việt Nam 2022”</h3>
+                                <p>June 24, 2022</p>
                             </div>
                         </a>
                     </div>
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new2.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other5.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
-                                <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
-                                <p>August 5, 2022</p>
+                                <h3>GIỚI THIỆU CÁC DIỄN GIẢ TẠI VIETNAM MOBILE DAY 2022 – WE CONNECT</h3>
+                                <p>June 10, 2022</p>
                             </div>
                         </a>
                     </div>
                     <div class="other-item other-item--left">
 
                         <a href="#"
-                            style="background: url('./assets/images/trangchu/new3.jpg') center center no-repeat; background-size: cover;">
+                            style="background: url('./assets/images/trangchu/other6.jpg') center center no-repeat; background-size: cover;">
                             <div class="other-item-content">
-                                <h3>Front-end developer lên trình như thế nào? Bạn đã thực sự hiểu về Front-End?</h3>
-                                <p>August 5, 2022</p>
+                                <h3>VIETNAM MOBILE DAY 2022: CÂU CHUYỆN VỀ CÔNG NGHỆ MOBILE ĐƯỢC HÉ LỘ</h3>
+                                <p>June 5, 2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-item other-item--left">
+
+                        <a href="#"
+                            style="background: url('./assets/images/trangchu/other7.png') center center no-repeat; background-size: cover;">
+                            <div class="other-item-content">
+                                <h3>Coffee Talk: Anh Trần Thiện Khiêm – Từ Việt Nam đến GAFA</h3>
+                                <p>April 5, 2022</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="other-item other-item--left">
+
+                        <a href="#"
+                            style="background: url('./assets/images/trangchu/other8.jpg') center center no-repeat; background-size: cover;">
+                            <div class="other-item-content">
+                                <h3>5 Điều Cần Trang Bị Để Trở Thành Lập Trình Viên .NET Giỏi</h3>
+                                <p>March 17, 2022</p>
                             </div>
                         </a>
                     </div>
@@ -376,16 +417,16 @@
                     <h1><span>Workshop</span></h1>
                     <div class="other-item--right">
                         <a href="#">
-                            <img src="./assets/images/trangchu/news1.jpg" alt="" height="160px" width="100%">
+                            <img src="./assets/images/trangchu/other9.jpg" alt="other9" height="160px" width="100%">
                             <h3>One Mount mở “sàn đấu Hackathon” cho hàng nghìn Kỹ sư...</h3>
                             <p>August 17, 2022</p>
                         </a>
                     </div>
                     <div class="other-item--right">
                         <a href="#">
-                            <img src="./assets/images/trangchu/news1.jpg" alt="" height="160px" width="100%">
-                            <h3>One Mount mở “sàn đấu Hackathon” cho hàng nghìn Kỹ sư...</h3>
-                            <p>August 17, 2022</p>
+                            <img src="./assets/images/trangchu/other10.jpg" alt="other10" height="160px" width="100%">
+                            <h3>Những trường Đại học đào tạo Công nghệ thông tin chất...</h3>
+                            <p>July 14, 2022</p>
                         </a>
                     </div>
                     <button class="other-item__btn-more">
