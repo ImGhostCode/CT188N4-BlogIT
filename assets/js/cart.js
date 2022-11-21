@@ -133,17 +133,6 @@ const Courses = {
     },
 }
 
-
-// class Course {
-//     constructor(id, title, description, price, sale) {
-//         this.id = id
-//         this.title = title
-//         this.description = description
-//         this.price = price
-//         this.sale = sale
-//     }
-// }
-
 //Course in cart
 document.querySelector(".cart__heading--3 span").textContent = cart.length ? cart.length : '0'
 let cart_courses = document.querySelector(".cart-courses")
@@ -186,7 +175,6 @@ function showCart() {
             </div>
             </div>`
         }
-
         //Display total price
         document.querySelector(".cart-total-price").textContent = `${VNDConverter(totalPrice)}`
         document.querySelector('.cart-sale-price').textContent = `${VNDConverter(totalSale)}`
@@ -194,8 +182,9 @@ function showCart() {
 }
 
 function removeItem(id) {
-    cart.splice(cart.indexOf(id), 1)
-    localStorage.setItem('cart', JSON.stringify(cart))
+    // cart.splice(cart.indexOf(id), 1)
+    const newCart = cart.filter(idItem => idItem != id)
+    localStorage.setItem('cart', JSON.stringify(newCart))
     location.reload()
 }
 

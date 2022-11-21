@@ -162,6 +162,14 @@
 
 }
 
+.section-featured-courses__btn--left {
+    left: -25px;
+}
+
+.section-featured-courses__btn--right {
+    right: -25px;
+}
+
 .btn-add-cart {
     background: #0bb732;
     font-weight: bold;

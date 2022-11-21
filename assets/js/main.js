@@ -1,3 +1,4 @@
+//Show and hide button to top
 window.onscroll = function () {
     if (scrollY > 300) {
         document.getElementById('footer__btn-top').style.animation = 'showBtnTop ease-in-out 1.5s forwards'
@@ -9,6 +10,7 @@ window.onscroll = function () {
     }
 }
 
+//Show and hide search box
 const btn_search = document.getElementById('nav__btn-search')
 const btn_search_click = document.getElementById('btn-search--click')
 btn_search.addEventListener('click', (e) => {
@@ -25,11 +27,15 @@ btn_search.addEventListener('click', (e) => {
     }
 })
 
+
+// 
 const input_search = document.querySelector('#btn-search--click input')
 input_search.addEventListener('click', e => {
     e.stopPropagation()
 })
 
+
+//Show and hide search box
 window.onclick = function (e) {
     // console.log(e.target.id === 'main')
     if (e.target.id === 'main') {
@@ -56,31 +62,31 @@ footer_top_btn.onclick = function (e) {
 }
 
 //Show and hide password
-var x = true;
+var isShow = true;
 function myFunction() {
-    if (x) {
+    if (isShow) {
         document.getElementById('password').type = "text";
         document.getElementsByClassName('form-group__btn-hide')[0].style.display = 'block'
         document.getElementsByClassName('form-group__btn-show')[0].style.display = 'none'
-        x = false;
+        isShow = false;
     } else {
         document.getElementById('password').type = "password";
         document.getElementsByClassName('form-group__btn-show')[0].style.display = 'block'
         document.getElementsByClassName('form-group__btn-hide')[0].style.display = 'none'
-        x = true;
+        isShow = true;
     }
 }
 function myFunction2() {
-    if (x) {
+    if (isShow) {
         document.getElementById('comfirm-password').type = "text";
         document.getElementsByClassName('form-group__btn-hide')[1].style.display = 'block'
         document.getElementsByClassName('form-group__btn-show')[1].style.display = 'none'
-        x = false;
+        isShow = false;
     } else {
         document.getElementById('comfirm-password').type = "password";
         document.getElementsByClassName('form-group__btn-show')[1].style.display = 'block'
         document.getElementsByClassName('form-group__btn-hide')[1].style.display = 'none'
-        x = true;
+        isShow = true;
     }
 }
 

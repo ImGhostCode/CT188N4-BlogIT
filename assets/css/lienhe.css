@@ -29,8 +29,7 @@ body {
 
 .main-wrapper {
     display: flex;
-    max-width: 56%;
-    /* height: 600px; */
+    width: 1068px;
     padding: 30px;
     margin: 0 auto;
     background-color: #fff;

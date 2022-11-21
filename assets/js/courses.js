@@ -21,7 +21,7 @@ showCard(showIndex)
 
 
 
-// Add product to cart
+// Add course to cart
 function addToCart(id) {
     if (cart.includes(id)) {
         alert("Da ton tai trong gio hang!")

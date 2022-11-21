@@ -1,0 +1,59 @@
+/* Tablet */
+@media (min-width: 1019px) and (max-width: 1140px) {
+
+    #article,
+    .header-top,
+    .header__nav,
+    .footer-top,
+    .footer-mid {
+        width: 980px;
+    }
+
+
+    /* Nav */
+    .nav__img {
+        width: 180px;
+        height: 64px;
+    }
+
+    .nav__list {
+        padding-left: 0;
+    }
+
+    .main-wrapper {
+        width: 980px;
+    }
+
+    .main-container {
+        width: 980px;
+    }
+
+    /* Btn left right */
+    .section-featured-courses__btn--left {
+        left: -15px;
+    }
+
+    .section-featured-courses__btn--right {
+        right: -15px;
+    }
+
+
+    /* Cart */
+    .cart-container {
+        width: 980px;
+    }
+
+    /* Footer */
+    .footer-mid__img img {
+        width: 215px;
+        height: 70px;
+    }
+
+
+
+
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {}
