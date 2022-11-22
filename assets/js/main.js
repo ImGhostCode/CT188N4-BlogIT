@@ -112,3 +112,40 @@ function VNDConverter(price) {
     return price.toLocaleString('de-ED', { style: 'currency', currency: 'VND' })
 }
 
+
+// Responsive mobile 
+document.querySelector('.nav__btn-menu').onclick = function () {
+    document.querySelector('.mobile-nav').style.transform = "translateX(0)";
+    document.querySelector('#header').style.transform = "scale(0.9)"
+    document.querySelector('#main').style.transform = "scale(0.9)"
+    document.querySelector('#footer').style.transform = "scale(0.9)"
+}
+
+
+document.querySelector('.mobile-close').onclick = function () {
+    document.querySelector('.mobile-nav').style.transform = "translateX(-100%)";
+    document.querySelector('#header').style.transform = "scale(1)"
+    document.querySelector('#main').style.transform = "scale(1)"
+    document.querySelector('#footer').style.transform = "scale(1)"
+}
+
+const sub_menu_list = document.querySelectorAll('.mobile-sub-menu')
+const span_dropdown = document.querySelectorAll(' .mobile-item span')
+// Show and hide sub menu
+let isShowSubMenu = false
+function showSubMenu(pos) {
+    if (isShowSubMenu) {
+        span_dropdown[pos - 1].style.transform = "rotateZ(0deg)"
+        sub_menu_list[pos - 1].style.animation = 'hideSubMenu ease-in-out 0.6s'
+        setTimeout(() => {
+            sub_menu_list[pos - 1].style.display = 'none'
+        }, 600)
+        isShowSubMenu = false
+    } else {
+        sub_menu_list[pos - 1].style.animation = 'showSubMenu ease-in-out 0.6s'
+        sub_menu_list[pos - 1].style.display = 'block'
+        span_dropdown[pos - 1].style.transform = "rotateZ(90deg)"
+
+        isShowSubMenu = true
+    }
+}
