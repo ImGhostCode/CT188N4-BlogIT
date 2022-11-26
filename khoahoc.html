@@ -25,6 +25,54 @@
 </head>
 
 <body id="body">
+    <div class="mobile-nav">
+        <div class="div-mobile-socials-wrapper">
+            <div class="mobile-menu-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="mobile-close"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+
+        <div class="mobile-content">
+            <ul class="mobile-list">
+                <li class="mobile-item"><a href="/trangchu.html">Home</a></li>
+                <li class="mobile-item"><a href="/khoahoc.html">Khoá Học</a></li>
+                <li class="mobile-item">
+                    <a href="#">Lập Trình <span onclick="showSubMenu(1)"><i
+                                class="fa-solid fa-chevron-right"></i></span></i></a>
+                    <ul class="mobile-sub-menu mobile-sub-menu--1">
+                        <li class="mobile-sub-item"><a href="#">Al Machine Learning</a></li>
+                        <li class="mobile-sub-item"><a href="#">Frontend</a></li>
+                        <li class="mobile-sub-item"><a href="#">Backend</a></li>
+                        <li class="mobile-sub-item"><a href="#">Fullstack</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item">
+
+                    <a href="#">Kỹ Năng Làm Việc <span onclick="showSubMenu(2)"><i
+                                class="fa-solid fa-chevron-right"></i></span></i></a>
+                    <ul class="mobile-sub-menu mobile-sub-menu--2">
+                        <li class="mobile-sub-item"><a href="#">Kinh nghiêm phỏng vấn</a></li>
+                        <li class="mobile-sub-item"><a href="#">Chuẩn hóa DV IT</a></li>
+                        <li class="mobile-sub-item"><a href="#">Đàm phán lương thưởng</a></li>
+                        <li class="mobile-sub-item"><a href="#">Cẩm nang tuyển dụng</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-item">
+                    <a href="#">Tài Khoản <span onclick="showSubMenu(3)"><i
+                                class="fa-solid fa-chevron-right"></i></span></i></a>
+
+                    <ul class="mobile-sub-menu mobile-sub-menu--3">
+                        <li class="mobile-sub-item"><a href="dangnhap.html">Đăng nhập</a></li>
+                        <li class="mobile-sub-item"><a href="dangky.html">Đăng ký</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header id="header">
         <div class="header-top">
             <a class="header-top__link" href="/lienhe.html">Contact us</a>
@@ -37,70 +85,56 @@
         </div>
 
         <div class="header__nav-wraper">
-            <div class="header-brand"></div>
+            <div class="header-brand">
+
+            </div>
             <nav class="header__nav">
+                <button class="nav__btn-menu"><i class="fa-solid fa-bars"></i></button>
+                <!-- <input type="checkbox" id="mobile-menu" class="nav__input"> -->
+                <!-- <label class="mobile-nav-label" for="mobile-menu"><i class="fa-solid fa-bars"></i></label> -->
                 <ul class="nav__list">
                     <a href="#"><img src="./assets/images/logo-blogit.jpg" alt="logo" width="195px" height="67px"
-                            class="nav__img" /></a>
-                    <li class="nav__item">
-                        <a class="nav__item-link" href="/trangchu.html">HOME</a>
+                            class="nav__img"></a>
+                    <li class="nav__item"><a class="nav__item-link" href="/trangchu.html">HOME</a>
+                    <li class="nav__item" style="background: #e24a32;"><a class="nav__item-link"
+                            href="/khoahoc.html">KHÓA HỌC</a>
                     </li>
-                    <li class="nav__item" style="background: #e24a32;">
-                        <a class="nav__item-link" href="/khoahoc.html">KHÓA HỌC</a>
-                    </li>
-                    <li class="nav__item dropdown">
-                        <a class="nav__item-link" href="#">LẬP TRÌNH <span><i
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">LẬP TRÌNH <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
                         <ul class="nav__item-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#">Al Machine Learning</a>
-                            </li>
+                            <li class="dropdown-item"><a href="#">Al Machine Learning</a></li>
                             <li class="dropdown-item"><a href="#">Frontend</a></li>
                             <li class="dropdown-item"><a href="#">Backend</a></li>
                             <li class="dropdown-item"><a href="#">Fullstack</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item dropdown">
-                        <a class="nav__item-link" href="#">KỸ NĂNG LÀM VIỆC
-                            <span><i class="fa-solid fa-chevron-down"></i></span></a>
-                        <ul class="nav__item-dropdown">
-                            <li class="dropdown-item">
-                                <a href="#">Kinh nghiệm phỏng vấn</a>
-                            </li>
-                            <li class="dropdown-item"><a href="#">Chuẩn hóa CV IT</a></li>
-                            <li class="dropdown-item">
-                                <a href="#">Đàm phán lương thưởng</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#">Cẩm nang tuyển dụng</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav__item dropdown">
-                        <a class="nav__item-link" href="#">TÀI KHOẢN <span><i
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">KỸ NĂNG LÀM VIỆC <span><i
                                     class="fa-solid fa-chevron-down"></i></span></a>
                         <ul class="nav__item-dropdown">
-                            <li class="dropdown-item">
-                                <a href="/dangnhap.html">Đăng nhập</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="/dangky.html">Đăng ký</a>
-                            </li>
+                            <li class="dropdown-item"><a href="#">Kinh nghiệm phỏng vấn</a></li>
+                            <li class="dropdown-item"><a href="#">Chuẩn hóa CV IT</a></li>
+                            <li class="dropdown-item"><a href="#">Đàm phán lương thưởng</a></li>
+                            <li class="dropdown-item"><a href="#">Cẩm nang tuyển dụng</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item dropdown"><a class="nav__item-link" href="#">TÀI KHOẢN <span><i
+                                    class="fa-solid fa-chevron-down"></i></span></a>
+                        <ul class="nav__item-dropdown">
+                            <li class="dropdown-item"><a href="/dangnhap.html">Đăng nhập</a></li>
+                            <li class="dropdown-item"><a href="/dangky.html">Đăng ký</a></li>
                         </ul>
                     </li>
                 </ul>
 
                 <div class="nav-wrapper-right center">
-                    <button class="nav__btn-search" id="nav__btn-search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <div class="btn-search--click center" id="btn-search--click">
-                            <input type="text" /><a href="/timkiem.html">Search</a>
-                        </div>
+                    <button class="nav__btn-search" id="nav__btn-search"><i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="btn-search--click center" id="btn-search--click"><input type="text"><a
+                                href="/timkiem.html">Search</a></div>
                     </button>
 
                     <button onclick="linkToCart()" class="nav__btn-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span id="btn-cart-number">1</span>
+                        <span id="btn-cart-number">0</span>
                     </button>
                 </div>
             </nav>
@@ -114,7 +148,7 @@
                     <span class="text-black"><i class="fa-solid fa-angle-right"></i></span>
                     <a class="text-black" href="">Courses</a>
                 </div>
-                <div class="main-search-box d-flex mt-4 border rounded">
+                <div class="main-search-box d-md-flex mt-4 border rounded">
                     <select class="form-select form-select-md text-center m-2 lh-lg"
                         aria-label=".form-select-sm example">
                         <option selected>Tất cả</option>
@@ -239,9 +273,9 @@
                         class="section-featured-courses__btn section-featured-courses__btn--right top-50 btn btn-dark rounded-circle position-absolute">&#10095;</button>
                 </section>
 
-                <h3 class="h3 mt-4 mb-0">All courses</h3>
-                <section class="section-courses mt-4 d-flex flex-wrap">
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                <h3 class="h3 mt-4 mb-0 courses__heading-3">All courses</h3>
+                <section class="section-courses mt-4 d-md-flex flex-wrap">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course1.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -282,7 +316,7 @@
                             <p><i class="fa-solid fa-check m-1"></i>Parse the Web and Create their own Games</p>
                         </div> -->
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course2.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -321,7 +355,7 @@
                                                 <p><i class="fa-solid fa-check m-1"></i>Parse the Web and Create their own Games</p>
                                             </div> -->
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course3.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -360,7 +394,7 @@
                             <p><i class="fa-solid fa-check m-1"></i>Parse the Web and Create their own Games</p>
                         </div> -->
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course4.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -388,7 +422,7 @@
                                 cart</button>
                         </div>
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course5.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -416,7 +450,7 @@
                                 cart</button>
                         </div>
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course6.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -446,7 +480,7 @@
 
                     </div>
 
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course7.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -475,7 +509,7 @@
                         </div>
 
                     </div>
-                    <div class="card section-card pb-2 mb-5" style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5">
                         <img src="./assets/images/khoahoc/course8.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"
@@ -504,8 +538,7 @@
                         </div>
 
                     </div>
-                    <div class="card section-card pb-2 mb-5 position-relative"
-                        style="width: calc(100% / 3 - 30px); margin:0 15px 3px;">
+                    <div class="card section-card pb-2 mb-5 position-relative">
                         <img src="./assets/images/khoahoc/course9.jpg" class="card-img-top" height="215" width="100%"
                             alt="...">
                         <span class="badge rounded-pill text-bg-danger position-absolute"

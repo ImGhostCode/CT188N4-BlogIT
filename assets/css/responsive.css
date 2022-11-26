@@ -1,5 +1,5 @@
+/* Ho Thanh Liem */
 /* Tablet */
-/* @media (min-width: 1019px) and (max-width: 1140px) { */
 @media (min-width: 768px) and (max-width: 1024px) {
 
     #article,
@@ -50,10 +50,6 @@
         height: 70px;
     }
 
-
-
-
-
 }
 
 /* Mobile */
@@ -87,6 +83,7 @@
     .nav__img {
         width: 150px;
         height: 50px;
+        margin: 0 0 0 24px;
     }
 
     .nav__btn-cart span {
@@ -183,6 +180,7 @@
 
     .footer-top p {
         width: 100%;
+        margin: 12px 0;
 
     }
 
@@ -198,7 +196,7 @@
     }
 
     .footer-mid__img {
-        margin-bottom: 50px;
+        margin: 50px 0;
     }
 
     .footer-mid__img img {
@@ -208,6 +206,10 @@
 
 
     .footer-mid-about p:last-child {
+        margin-bottom: 50px;
+    }
+
+    .footer-mid-follow {
         margin-bottom: 50px;
     }
 
@@ -363,6 +365,124 @@
         to {
             max-height: 0;
             opacity: 0;
+            visibility: hidden;
+            display: none;
         }
+    }
+
+    /* Khoa hoc */
+    .section-featured-courses {
+        display: none;
+    }
+
+    .section-card {
+        width: unset;
+    }
+
+    .main-courses {
+        margin-left: 15px;
+    }
+
+    .courses__heading-3 {
+        margin-left: 15px;
+    }
+
+    /* Cart */
+    .cart-wrapper {
+        flex-direction: column;
+    }
+
+    .cart-container {
+        /* margin: 0 15px; */
+    }
+
+    .cart__img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .cart-container,
+    .cart-courses,
+    .cart-checkout {
+        width: 100%;
+    }
+
+    .cart-checkout {
+        margin: 0;
+    }
+
+
+    /* Phi Ngoc Tai */
+    /* trang liên hệ của mobile */
+    .main-wrapper {
+        font-size: 11px;
+        margin: 10px;
+        display: block;
+        width: auto;
+    }
+
+    .main--left,
+    .main--right {
+        width: 100%;
+    }
+
+    .main--right h2 {
+        margin: 30px 0 10px;
+        font-size: 25px;
+    }
+
+    .main--left h2 {
+        font-size: 25px;
+    }
+
+
+    /* trang đăng nhập mobile */
+    .main__fieldset {
+        width: 100%;
+        /* padding: 0 15px;
+        margin: 50px auto 150px; */
+    }
+
+    .main--resp {
+        padding: 0 15px;
+    }
+
+    main__fieldset--reg #main--dangnhap {
+        padding: 0px;
+    }
+
+    /* trang đăng kí */
+
+    .form-wrapper--resp {
+        display: block;
+    }
+
+    /* trang tìm kiếm */
+
+    .main-search__heading--1 {
+        font-size: 24px;
+    }
+
+    .link-content__heading--3 {
+        font-size: 17px;
+    }
+
+    .link-content__heading--sub {
+        display: none;
+    }
+
+    .link__img--resp {
+        height: 80px;
+        width: 80px;
+    }
+
+    .main-container {
+        width: 100%;
+
+    }
+
+    .main--timkiem {
+        padding: 0;
+        margin: 5px;
     }
 }

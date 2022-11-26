@@ -161,6 +161,7 @@
  .main__p {
      text-align: center;
      font-size: 11px;
+     margin-bottom: 8px;
  }
 
  .form-social {

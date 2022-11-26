@@ -23,7 +23,6 @@ btn_search.addEventListener('click', (e) => {
         setTimeout(() => {
             btn_search_click.style.visibility = 'hidden'
         }, 600)
-
     }
 })
 
@@ -37,12 +36,9 @@ input_search.addEventListener('click', e => {
 
 //Show and hide search box
 window.onclick = function (e) {
-    // console.log(e.target.id === 'main')
+    // console.log(e.target)
     if (e.target.id === 'main') {
         btn_search_click.style.animation = 'btn-search-animation-hide ease-in-out 0.4s forwards'
-        setTimeout(() => {
-            btn_search_click.style.visibility = 'hidden'
-        }, 600)
     }
 }
 
@@ -136,10 +132,7 @@ let isShowSubMenu = false
 function showSubMenu(pos) {
     if (isShowSubMenu) {
         span_dropdown[pos - 1].style.transform = "rotateZ(0deg)"
-        sub_menu_list[pos - 1].style.animation = 'hideSubMenu ease-in-out 0.6s'
-        setTimeout(() => {
-            sub_menu_list[pos - 1].style.display = 'none'
-        }, 600)
+        sub_menu_list[pos - 1].style.animation = 'hideSubMenu ease-in-out 0.6s forwards'
         isShowSubMenu = false
     } else {
         sub_menu_list[pos - 1].style.animation = 'showSubMenu ease-in-out 0.6s'

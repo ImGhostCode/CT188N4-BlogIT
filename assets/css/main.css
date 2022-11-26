@@ -40,6 +40,7 @@ body {
     width: 100%;
     font-size: 11px;
     background-color: #385c7b;
+    z-index: 1;
 }
 
 
@@ -164,7 +165,7 @@ body {
     border: none;
     font-size: 20px;
     font-weight: 600;
-    padding: 0 16px;
+    padding: 0 10px;
     position: relative;
     height: 100%;
 }
@@ -249,6 +250,8 @@ body {
     to {
         opacity: 0;
         transform: translateY(30%);
+        /* visibility: hidden;
+        display: none; */
     }
 }
 
@@ -260,18 +263,19 @@ body {
     border: none;
     outline: none;
     position: relative;
+    padding: 0 10px;
 }
 
 .nav__btn-cart span {
     position: absolute;
     color: #fff;
     background-color: rgb(164, 53, 240);
-    top: 15px;
+    top: 12px;
     height: 17px;
     width: 17px;
     border-radius: 50%;
     font-size: 12px;
-    right: -10px;
+    right: 3px;
 }
 
 .nav__btn-cart:hover {
@@ -285,6 +289,7 @@ body {
     transform: scale(1);
     /* height: 1500px; */
     background-color: #1a1a1a;
+    /* z-index: -1; */
 }
 
 /* Footer */

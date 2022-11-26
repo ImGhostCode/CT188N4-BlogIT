@@ -60,6 +60,8 @@
     transition: 0.3s;
     position: relative;
     height: 585px;
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px 3px;
 }
 
 .section-card:hover {
