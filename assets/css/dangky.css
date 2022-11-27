@@ -1,14 +1,11 @@
+/* PHI NGOC TAI */
 * {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* box-sizing: border-box; */
     text-decoration: none;
 }
 
 .main__fieldset {
-    /* width: 100%; */
     width: 530px;
     background-color: #fff;
-    /* border: 3px solid lightgray; */
     border: 1px solid hsla(0, 0%, 95%, .5);
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
     margin: 64px auto;
@@ -29,7 +26,6 @@
 }
 
 #main {
-    /* display: flex; */
     background-color: #fafafa;
     height: auto;
     width: 100%;
@@ -83,8 +79,6 @@
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
 }
 
-
-
 .form-group__btn {
     border: none;
     outline: none;
@@ -98,8 +92,6 @@
     width: 18px;
     background: none;
 }
-
-
 
 .form-group__btn:hover {
     color: #de3535;

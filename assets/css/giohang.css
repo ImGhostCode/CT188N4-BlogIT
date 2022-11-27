@@ -1,3 +1,4 @@
+/* HO THANH LIEM */
 .btn-search--click {
     box-shadow: 0 1px 4px rgb(0 0 0 / 15%), 0 1px 2px rgb(0 0 0 / 15%);
 }
@@ -7,11 +8,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 64px;
-    /* background: #fff; */
 }
 
 #main {
-    /* background: #e8e8e8; */
     background: #fff;
 
 }
@@ -165,7 +164,6 @@
     font-size: 18px;
     font-weight: 700;
 }
-
 
 .cart-empty {
     width: 100%;

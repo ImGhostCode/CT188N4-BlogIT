@@ -1,27 +1,6 @@
-/* * {
-    box-sizing: border-box;
-
-}
-
-body {
-    background-color: #eee;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* main {
-    background-color: #fff;
-    display: flex;
-    width: 1260px;
-    padding: 10px;
-
-} */
-
+/* PHI NGOC TAI */
 #main {
     background-color: #fafafa;
-    /* background-color: #1a1a1a; */
     height: auto;
     width: 100%;
     padding: 40px 0;
@@ -56,10 +35,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* .main--left p:first-of-type {
-    margin-bottom: 10px;
-} */
-
 .main--left p {
     margin-bottom: 5px;
 }
@@ -93,10 +68,6 @@ body {
     color: #de3535;
     cursor: pointer;
 }
-
-/* a :hover {
-    background-color: hotpink;
-} */
 
 .main__frame {
     height: 350px;

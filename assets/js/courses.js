@@ -1,3 +1,4 @@
+/* HO THANH LIEM */
 //Courses slideshow
 let showIndex = 1
 function nextCard(index) {

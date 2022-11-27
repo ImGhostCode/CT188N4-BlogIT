@@ -1,3 +1,5 @@
+/* HO THANH LIEM */
+/* PHI NGOC TAI */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
 * {
@@ -10,7 +12,6 @@ body {
     background: #000;
     display: grid;
     font-family: Verdana, Geneva, sans-serif;
-    /* font-family: "Poppins"; */
 }
 
 .d-flex {
@@ -32,8 +33,8 @@ body {
     display: none;
 }
 
-/* Header */
 
+/* Header */
 #header {
     transition: 0.4s ease;
     transform: scale(1);
@@ -109,22 +110,18 @@ body {
 }
 
 .dropdown {
-    /* width: auto; */
     position: relative;
 }
 
 .dropdown:hover .nav__item-dropdown {
-    /* display: block; */
     visibility: visible;
 }
 
 .nav__item-dropdown {
-    /* display: none; */
     visibility: hidden;
     position: absolute;
     list-style: none;
     background-color: #fff;
-    /* background-color: #0a0a0a; */
     top: 100%;
     left: -12px;
     border-radius: 2px;
@@ -143,7 +140,6 @@ body {
     line-height: 20px;
     font-size: 12px;
     color: #111;
-    /* color: #fff; */
     text-decoration: none;
     font-weight: 450;
 }
@@ -153,11 +149,6 @@ body {
     color: #e24a32;
 
 }
-
-
-/* .header-brand {
-    display: inline;
-} */
 
 .nav__btn-search {
     background-color: #000;
@@ -208,7 +199,6 @@ body {
 
 .btn-search--click input {
     padding: 3px 9px;
-    /* display: inline-block; */
     height: 32px;
     border: 1px solid #e1e1e1;
     outline: none;
@@ -243,15 +233,13 @@ body {
 @keyframes btn-search-animation-hide {
     from {
         opacity: 1;
-        /* transform: translateY(0); */
-
     }
 
     to {
         opacity: 0;
         transform: translateY(30%);
-        /* visibility: hidden;
-        display: none; */
+        visibility: hidden;
+        display: none;
     }
 }
 
@@ -287,13 +275,10 @@ body {
 #main {
     transition: 0.4s ease;
     transform: scale(1);
-    /* height: 1500px; */
     background-color: #1a1a1a;
-    /* z-index: -1; */
 }
 
 /* Footer */
-
 #footer {
     transition: 0.4s ease;
     transform: scale(1);
@@ -350,8 +335,6 @@ body {
 
 .footer-top__p {
     margin: 15px auto;
-    /* visibility: hidden;
-     */
     display: none;
 }
 
@@ -359,8 +342,6 @@ body {
     background-color: #000;
     color: #fff;
 }
-
-.footer-mid {}
 
 .footer-mid__img {
     width: 25%;
@@ -443,7 +424,6 @@ body {
     border: none;
     cursor: pointer;
     visibility: hidden;
-    /* animation: showBtnTop ease-in-out 5s; */
     border-radius: 2px;
 }
 

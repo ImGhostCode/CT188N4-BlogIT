@@ -1,4 +1,6 @@
-/* Ho Thanh Liem */
+/* HO THANH LIEM */
+/* PHI NGOC TAI */
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -411,6 +413,33 @@
         margin: 0;
     }
 
+    /* Blog */
+
+    .section-content h1 {
+        font-size: 32px;
+        padding: 10px;
+    }
+
+    .section-content__img {
+        height: auto;
+    }
+
+    .section-related-wrapper {
+        display: block;
+    }
+
+    .section-related__link {
+        display: flex;
+        width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .section-related-img-wrapper img {
+        margin-right: 8px;
+        width: 100px;
+        height: 70px;
+    }
+
 
     /* Phi Ngoc Tai */
     /* trang liên hệ của mobile */
@@ -485,4 +514,8 @@
         padding: 0;
         margin: 5px;
     }
+
+
+
+
 }

@@ -1,3 +1,4 @@
+/* HO THANH LIEM */
 .main-container {
     width: 1068px;
     margin-left: auto;
@@ -128,7 +129,6 @@
 }
 
 .featured-courses-slide .card {
-    /* transform: translateX(100%); */
     animation: slideToLeft ease-out .5s;
 }
 

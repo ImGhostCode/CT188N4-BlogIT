@@ -1,3 +1,4 @@
+/* HO THANH LIEM */
 const Courses = {
     "01": {
         "id": 1,
@@ -150,7 +151,6 @@ function showCart() {
         for (const id of cart) {
             totalPrice += Courses[id].price
             totalSale += Courses[id].sale
-            // console.log(Courses[id])
             cart_courses.innerHTML += `<div class="cart-item">
             <img src="./assets/images/khoahoc/${Courses[id].photo}.jpg" class="cart__img" alt="${Courses[id].photo}">
             <div class="cart-item-info">
@@ -182,7 +182,6 @@ function showCart() {
 }
 
 function removeItem(id) {
-    // cart.splice(cart.indexOf(id), 1)
     const newCart = cart.filter(idItem => idItem != id)
     localStorage.setItem('cart', JSON.stringify(newCart))
     location.reload()
