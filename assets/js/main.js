@@ -58,6 +58,7 @@ footer_top_btn.onclick = function (e) {
 }
 
 //Show and hide password
+// https://www.w3schools.com/howto/howto_js_toggle_password.asp
 var isShow = true;
 function myFunction() {
     if (isShow) {
@@ -110,6 +111,7 @@ function VNDConverter(price) {
 
 
 // Responsive mobile 
+// https://www.youtube.com/watch?v=Zuy7f4iCGu4
 document.querySelector('.nav__btn-menu').onclick = function () {
     document.querySelector('.mobile-nav').style.transform = "translateX(0)";
     document.querySelector('#header').style.transform = "scale(0.9)"

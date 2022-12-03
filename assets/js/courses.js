@@ -1,4 +1,5 @@
 /* HO THANH LIEM */
+// https://www.w3schools.com/
 //Courses slideshow
 let showIndex = 1
 function nextCard(index) {
